@@ -1,0 +1,29 @@
+
+entity Person {
+firstName String,
+lastName String,
+age Integer
+adresseId  Sring 
+}
+
+entity Address {
+adresseId String,
+streetNumber Integer, 
+StreetName  String,
+ComplementAddresse  String,
+Zipcode Integer,
+City String,
+Country String
+}
+
+
+relationship OneToMany {
+	Person{adressesId} to Address
+}
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+// Set an angular suffix
+angularSuffix * with mySuffix
